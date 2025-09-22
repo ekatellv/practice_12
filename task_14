@@ -3,7 +3,6 @@ clue = input('Введите подсказку: ')
 word = input('Введите загаданное слово: ').lower()
 print('\n' * 25)
 attempts = 10
-guessed_letters = set()
 hidden_word = ['*'] * len(word)
 print(f'Подсказка: {clue}')
 print('Слово: ', ''.join(hidden_word))
