@@ -1,4 +1,4 @@
-#ввод данных ведущим
+# ввод данных ведущим
 clue = input('Введите подсказку: ')
 word = input('Введите загаданное слово: ').lower()
 print('\n' * 25)
@@ -18,6 +18,7 @@ while attempts > 0:
                 if word[i] == letter:
                     hidden_word[i] = letter
                     print(''.join(hidden_word))
+                    attempts -= 1
         else:
             print('Буквы в слове нет')
             attempts -= 1
